@@ -1,0 +1,16 @@
+
+<style>
+    .bi{
+    color: yellowgreen
+}
+</style>
+<div style ="margin-left: 30px;border: 3px solid goldenrod">
+    <span class = "bi"
+    [class.bi-star-fill]="isFavourite"
+    [class.bi-star]="!isFavourite"
+    [ngClass]="{
+        'bi-star-fill':isFavourite,
+        'bi-star':!isFavourite
+    }"
+    (click)="onCLick()"></span>
+</div>

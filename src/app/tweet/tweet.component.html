@@ -1,0 +1,10 @@
+<div style= "border: 3px solid #eee">
+    <p>{{tweet.body}}</p>
+    <br />
+    <div>
+<label>{{ tweet.likes }}</label>
+<favourite-component>[isSelected]="tweet.isLiked"
+    (change)="onTweetLikedStatuesChanged()"
+></favourite-component>
+    </div>
+</div>
